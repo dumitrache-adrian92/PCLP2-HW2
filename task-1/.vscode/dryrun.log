@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/adrian/Dropbox/Facultate/PCLP2/tema2/task-1'
+gcc -c -g -m32 check_simple_cipher.c -o check_simple_cipher.o
+nasm -f elf simple.asm -o simple.o
+gcc -m32 -g check_simple_cipher.o simple.o -o checker
+rm *.o
+make: Leaving directory '/home/adrian/Dropbox/Facultate/PCLP2/tema2/task-1'
+ 
